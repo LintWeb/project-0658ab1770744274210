@@ -391,6 +391,17 @@
         }
 
         /* --- Animations --- */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -455,43 +466,43 @@
         <a href="#contact" class="cta-btn">Start Your Journey</a>
     </header>
 
-    <section id="about">
+    <section id="about" class="animate-on-scroll">
         <div class="section-title">
             <h2>Our Academy</h2>
         </div>
         <div class="about-content">
-            <div class="about-text">
+            <div class="about-text animate-on-scroll">
                 <h3>Tradition Meets Excellence</h3>
                 <p>Shaolin-Ji Karate-Do Academy is dedicated to the traditional teachings of Karate while integrating modern fitness and self-defense techniques. Our academy is a place where students of all ages learn more than just combat; they learn respect, perseverance, and confidence.</p>
                 <p style="margin-top: 1rem;">Whether you are a beginner looking to start your martial arts journey or an experienced practitioner aiming to hone your skills, our expert instructors provide personalized guidance to help you reach your goals.</p>
             </div>
-            <div class="about-image">
+            <div class="about-image animate-on-scroll">
                 <img src="images/chat-upload-1770744457756-1.jpeg" alt="Students practicing Karate at Shaolin-Ji Academy">
             </div>
         </div>
     </section>
 
-    <section class="features" id="classes">
+    <section class="features animate-on-scroll" id="classes">
         <div class="section-title">
             <h2>Why Choose Us</h2>
         </div>
         <div class="features-grid">
-            <div class="feature-card">
+            <div class="feature-card animate-on-scroll">
                 <i class="fas fa-shield-alt"></i>
                 <h3>Self-Defense</h3>
                 <p>Learn practical techniques to protect yourself and your loved ones in real-world situations.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card animate-on-scroll">
                 <i class="fas fa-brain"></i>
                 <h3>Mental Focus</h3>
                 <p>Improve concentration, reduce stress, and develop the mental toughness needed for life's challenges.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card animate-on-scroll">
                 <i class="fas fa-heartbeat"></i>
                 <h3>Physical Fitness</h3>
                 <p>A complete body workout that improves flexibility, strength, endurance, and coordination.</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card animate-on-scroll">
                 <i class="fas fa-medal"></i>
                 <h3>Discipline</h3>
                 <p>Instill core values of respect, punctuality, and hard work in a supportive environment.</p>
@@ -499,51 +510,51 @@
         </div>
     </section>
 
-    <section class="rating-box">
-        <div class="stars">
+    <section class="rating-box animate-on-scroll">
+        <div class="stars animate-on-scroll">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <div class="rating-number">4.6 / 5</div>
-        <p>Based on 11 verified student reviews</p>
-        <p style="margin-top: 1rem; font-style: italic; color: var(--gray);">"The best martial arts academy in Chittagong. Highly disciplined and professional!"</p>
+        <div class="rating-number animate-on-scroll">4.6 / 5</div>
+        <p class="animate-on-scroll">Based on 11 verified student reviews</p>
+        <p class="animate-on-scroll" style="margin-top: 1rem; font-style: italic; color: var(--gray);">"The best martial arts academy in Chittagong. Highly disciplined and professional!"</p>
     </section>
 
-    <section id="gallery">
+    <section id="gallery" class="animate-on-scroll">
         <div class="section-title">
             <h2>Our Gallery</h2>
         </div>
         <div class="gallery-grid">
-            <div class="gallery-item">
+            <div class="gallery-item animate-on-scroll">
                 <img src="images/chat-upload-1770744760396-1.jpeg" alt="Karate training session with children">
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item animate-on-scroll">
                 <img src="images/chat-upload-1770744760397-2.jpeg" alt="Student receiving a certificate at Shaolin-Ji Academy">
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item animate-on-scroll">
                 <img src="images/chat-upload-1770744760398-3.jpeg" alt="Ceremony and certificate distribution">
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item animate-on-scroll">
                 <img src="images/chat-upload-1770744760399-4.jpeg" alt="Group of students practicing punches">
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item animate-on-scroll">
                 <img src="images/chat-upload-1770744760400-5.jpeg" alt="Academy instructors and officials at an event">
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item animate-on-scroll">
                 <img src="images/chat-upload-1770745034054-1.jpeg" alt="Student receiving a green belt certificate at Shaolin-Ji Academy">
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="animate-on-scroll">
         <div class="section-title">
             <h2>Get In Touch</h2>
         </div>
         <div class="contact-container">
-            <div class="contact-info">
+            <div class="contact-info animate-on-scroll">
                 <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div class="info-text">
@@ -559,7 +570,7 @@
                     </div>
                 </div>
             </div>
-            <div class="map-container">
+            <div class="map-container animate-on-scroll">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.415053676176!2d91.8080277!3d22.3275833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd9420986503f%3A0x8898b16c5221644d!2sShaolin-Ji%20Karate-Do%20Academy!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd" 
                     allowfullscreen="" 
@@ -617,6 +628,26 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Intersection Observer for In-View Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Optional: stop observing once animated
+                    // observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
         });
     </script>
 </body>
