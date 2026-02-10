@@ -64,7 +64,14 @@
             font-weight: 800;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
+            text-decoration: none;
+        }
+
+        .logo img {
+            max-height: 50px;
+            width: auto;
+            border-radius: 50%; /* Since it's a circular logo */
         }
 
         .logo span {
@@ -319,6 +326,16 @@
             font-size: 1.5rem;
             font-weight: 800;
             margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo img {
+            max-height: 80px;
+            width: auto;
+            border-radius: 50%;
         }
 
         .footer-links {
@@ -405,9 +422,10 @@
 <body>
 
     <nav>
-        <div class="logo">
-            <i class="fas fa-hand-fist"></i> SHAOLIN-JI <span>KARATE</span>
-        </div>
+        <a href="#home" class="logo">
+            <img src="images/chat-upload-1770744385774-1.jpeg" alt="Shaolin-Ji Karate-Do Academy Logo">
+            SHAOLIN-JI <span>KARATE</span>
+        </a>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -521,6 +539,7 @@
 
     <footer>
         <div class="footer-logo">
+            <img src="images/chat-upload-1770744385774-1.jpeg" alt="Shaolin-Ji Karate-Do Academy Logo">
             SHAOLIN-JI KARATE-DO ACADEMY
         </div>
         <ul class="footer-links">
