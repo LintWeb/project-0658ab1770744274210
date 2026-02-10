@@ -259,6 +259,31 @@
             margin-bottom: 0.5rem;
         }
 
+        /* --- Gallery Section --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
         /* --- Contact Section --- */
         .contact-container {
             display: grid;
@@ -416,6 +441,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#classes">Classes</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="mobile-menu-btn">
@@ -486,6 +512,29 @@
         <p style="margin-top: 1rem; font-style: italic; color: var(--gray);">"The best martial arts academy in Chittagong. Highly disciplined and professional!"</p>
     </section>
 
+    <section id="gallery">
+        <div class="section-title">
+            <h2>Our Gallery</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/chat-upload-1770744760396-1.jpeg" alt="Karate training session with children">
+            </div>
+            <div class="gallery-item">
+                <img src="images/chat-upload-1770744760397-2.jpeg" alt="Student receiving a certificate at Shaolin-Ji Academy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/chat-upload-1770744760398-3.jpeg" alt="Ceremony and certificate distribution">
+            </div>
+            <div class="gallery-item">
+                <img src="images/chat-upload-1770744760399-4.jpeg" alt="Group of students practicing punches">
+            </div>
+            <div class="gallery-item">
+                <img src="images/chat-upload-1770744760400-5.jpeg" alt="Academy instructors and officials at an event">
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="section-title">
             <h2>Get In Touch</h2>
@@ -527,6 +576,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#classes">Classes</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
